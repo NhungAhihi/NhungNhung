@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  ul, li{
+    list-style: none;
+}
+
+  body {
+    background-color: #333;
+  }
+
+  div#menu{
+    background-color: #0a0a0a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 12 50px;
+    height: 60px;
+    align-items: center;
+  }
+  .mLeft{
+      flex: 1;
+  }
+  .mLeft img{
+      width: 28%;  
+  }
+  .mRight{
+      flex: 2;
+  }
+
+  .searchBox {
+    position: relative;
+    width: 40%;
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden; /* Nếu nội dung bên trong bị tràn ra ngoài thì sẽ ẩn phần bị tràn */
+  }
+
+  .searchBox input{
+    flex: 1; /* Có nhiều thành phần bên trong khối display: flex, mà nếu có 1 thành phần có flex: 1 hoặc flex: x lớn nhất sẽ chiếm toàn bộ không gian còn lại */
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 10px;
+    font-size: 18px;
+    outline: none;
+  }
+
+  #searchIcon{
+    position: relative;
+    font-size: 22px;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    z-index: 221;
+  }
+
+  .searchBox .searchButton {
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+  }
+
+  div#menu ul li{
+      display: inline-block;
+      margin: 0 15px;
+  }
+  .mRight a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .mRight a:hover {
+    color: #ccc;
+  }
+
+  .container {
+    background-image: url(spider-man-7680x4320.jpg);
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing:border-box ;
+    font-family: sans-serif;
+    width: 95%;
+    padding: 28px;
+    margin:  28px;
+    border-radius: 28px;
+    box-shadow: 28px 4px 28px rgb(7, 7, 7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container table {
+    min-height: 224px;
+    border-radius: 8px;
+    background-color: #fff;
+    opacity: 0.8;
+    margin: 0 20px;
+  }
+  .container table input {
+    border-radius: 6px;
+  }
+  .form-title{
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 6px;
+    color: rgb(22, 22, 22);
+    text-shadow: 2px 2px 2px rgb(60, 24, 190);
+    border-bottom: solid 1px rgb(12, 12, 12);
+  }
+
+  .main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+  div#footer {
+    background-color: #030303;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .lFooter, .rFooter {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .lFooter p img {
+    height: 50px;
+    width: 30%;
+    margin: 12px;
+  }
+  .lFooter p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .lFooter p:last-child {
+    margin-bottom: 0;
+  }
+  .rFooter {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .rFooter1, .rFooter2, .rFooter3, .rFooter4 {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .rFooter1 li, .rFooter2 li, .rFooter3 li {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .rFooter1 a, .rFooter2 a, .rFooter3 a, .rFooter4 a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .rFooter1 a:hover, .rFooter2 a:hover, .rFooter3 a:hover, .rFooter4 a:hover {
+    color: #8b87c6;
+  }
